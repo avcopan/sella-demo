@@ -13,12 +13,30 @@ curl -fsSL https://pixi.sh/install.sh | bash
 pixi install  # in this directory
 ```
 
-3. Pip install sella (from cloned repo)
+3. Activate the environment.
 ```
-pip install -e /path/to/sella/repo --no-deps
+pixi shell  # in this directory
 ```
 
-4. Open the notebook in Jupyter.
+4. Pip install sella
 ```
-jupyter notebook test.ipynb
+pip install git+https://github.com/zadorlab/sella.git@master --no-deps
 ```
+
+5. Open the notebook in Jupyter. (This one just shows basic usage)
+```
+jupyter notebook demo.ipynb
+```
+
+6. The better demo with a relaxed scan uses some functions from the dev branch of my
+AutoChem repo, which can be installed as follows:
+```
+pip install git+https://github.com/avcopan/autochem.git@dev --no-deps
+```
+
+7. Open the notebook in Jupyter. (This one just shows basic usage)
+```
+jupyter notebook demo-with-scan.ipynb
+```
+
+
